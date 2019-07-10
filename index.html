@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Batalha das Cidades - Rio de Janeiro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>Batalha das Cidades - Rio de Janeiro</h1>
+    </div>
+
+    <section class="container">
+        <h2>Município</h2>
+        <div class="form-group">
+            <label for="smunicipio">Selecione a cidade e veja o status atual dela:</label>
+            <select id="smunicipio"></select>
+        </div>
+        <div>
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <th>Pontos de vida</th>
+                        <td id="pv">0</td>
+                    </tr>
+                    <tr>
+                        <th>Força</th>
+                        <td id="forca">0</td>
+                    </tr>
+                    <tr>
+                        <th>Habilidade</th>
+                        <td id="habilidade">0</td>
+                    </tr>
+                    <tr>
+                        <th>Resistência</th>
+                        <td id="resistencia">0</td>
+                    </tr>
+                    <tr>
+                        <th>Armadura</th>
+                        <td id="armadura">0</td>
+                    </tr>
+                    <tr>
+                        <th>Poder de fogo</th>
+                        <td id="pdf">0</td>
+                    </tr>
+                    <tr>
+                        <th>Império</th>
+                        <td>
+                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalScrollable" id="imperio">
+                                Próprio
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">Territórios conquistados</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul></ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container">
+        <h2>Histórico de rodadas</h2>
+        <div class="accordion" id="accordionExample">
+                                        <div class="card">
+                    <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                            Resultado da rodada #4 (São Gonçalo x Niterói)
+                        </button>
+                    </h2>
+                    </div>
+
+                    <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                                <p>Niterói não sofreu dano.</p>
+                                                        <p>São Gonçalo perdeu 1 pontos de vida e ficou com 19.</p>
+                                                        <p>Niterói não sofreu dano.</p>
+                                                        <p>São Gonçalo não sofreu dano.</p>
+                                                        <p>Niterói perdeu 1 pontos de vida e ficou com 19.</p>
+                                                        <p>São Gonçalo perdeu 2 pontos de vida e ficou com 17.</p>
+                                                        <p>Niterói perdeu 2 pontos de vida e ficou com 17.</p>
+                                                        <p>São Gonçalo não sofreu dano.</p>
+                                                        <p>Niterói perdeu 1 pontos de vida e ficou com 16.</p>
+                                                        <p>São Gonçalo não sofreu dano.</p>
+                                                        <p>Niterói perdeu 1 pontos de vida e ficou com 15.</p>
+                                                        <p>São Gonçalo perdeu 2 pontos de vida e ficou com 15.</p>
+                                                        <p>Niterói perdeu 1 pontos de vida e ficou com 14.</p>
+                                                        <p>São Gonçalo não sofreu dano.</p>
+                                                        <p>Niterói perdeu 1 pontos de vida e ficou com 13.</p>
+                                                        <p>São Gonçalo perdeu 1 pontos de vida e ficou com 14.</p>
+                                                        <p>Niterói perdeu 1 pontos de vida e ficou com 12.</p>
+                                                        <p>São Gonçalo perdeu 3 pontos de vida e ficou com 11.</p>
+                                                        <p>Niterói perdeu 2 pontos de vida e ficou com 10.</p>
+                                                        <p>São Gonçalo perdeu 1 pontos de vida e ficou com 10.</p>
+                                                        <p>Niterói perdeu 2 pontos de vida e ficou com 8.</p>
+                                                        <p>São Gonçalo não sofreu dano.</p>
+                                                        <p>Niterói perdeu 3 pontos de vida e ficou com 5.</p>
+                                                        <p>São Gonçalo perdeu 2 pontos de vida e ficou com 8.</p>
+                                                        <p>Niterói não sofreu dano.</p>
+                                                        <p>São Gonçalo não sofreu dano.</p>
+                                                        <p>Niterói não sofreu dano.</p>
+                                                        <p>São Gonçalo perdeu 1 pontos de vida e ficou com 7.</p>
+                                                        <p>Niterói não sofreu dano.</p>
+                                                        <p>São Gonçalo perdeu 2 pontos de vida e ficou com 5.</p>
+                                                        <p>Niterói não sofreu dano.</p>
+                                                        <p>São Gonçalo perdeu 3 pontos de vida e ficou com 2.</p>
+                                                        <p>Niterói perdeu 1 pontos de vida e ficou com 4.</p>
+                                                        <p>São Gonçalo perdeu 1 pontos de vida e ficou com 1.</p>
+                                                        <p>Niterói perdeu 1 pontos de vida e ficou com 3.</p>
+                                                        <p>São Gonçalo perdeu 2 pontos de vida e ficou com -1.</p>
+                                                        <p>São Gonçalo foi derrotado e conquistado por Niterói.</p>
+                                
+                    </div>
+                    </div>
+                </div>
+                                                    <div class="card">
+                    <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                            Resultado da rodada #3 (Teresópolis x São José do Vale do Rio Preto)
+                        </button>
+                    </h2>
+                    </div>
+
+                    <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                                <p>São José do Vale do Rio Preto não sofreu dano.</p>
+                                                        <p>Teresópolis não sofreu dano.</p>
+                                                        <p>São José do Vale do Rio Preto perdeu 3 pontos de vida e ficou com 7.</p>
+                                                        <p>Teresópolis não sofreu dano.</p>
+                                                        <p>São José do Vale do Rio Preto perdeu 2 pontos de vida e ficou com 5.</p>
+                                                        <p>Teresópolis não sofreu dano.</p>
+                                                        <p>São José do Vale do Rio Preto perdeu 3 pontos de vida e ficou com 2.</p>
+                                                        <p>Teresópolis não sofreu dano.</p>
+                                                        <p>São José do Vale do Rio Preto perdeu 1 pontos de vida e ficou com 1.</p>
+                                                        <p>Teresópolis perdeu 1 pontos de vida e ficou com 9.</p>
+                                                        <p>São José do Vale do Rio Preto perdeu 1 pontos de vida e ficou com 0.</p>
+                                                        <p>São José do Vale do Rio Preto foi derrotado e conquistado por Teresópolis.</p>
+                                
+                    </div>
+                    </div>
+                </div>
+                                                    <div class="card">
+                    <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                            Resultado da rodada #2 (Natividade x Porciúncula)
+                        </button>
+                    </h2>
+                    </div>
+
+                    <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                                <p>Porciúncula perdeu 3 pontos de vida e ficou com 7.</p>
+                                                        <p>Natividade perdeu 3 pontos de vida e ficou com 7.</p>
+                                                        <p>Porciúncula perdeu 1 pontos de vida e ficou com 6.</p>
+                                                        <p>Natividade perdeu 3 pontos de vida e ficou com 4.</p>
+                                                        <p>Porciúncula perdeu 1 pontos de vida e ficou com 5.</p>
+                                                        <p>Natividade perdeu 3 pontos de vida e ficou com 1.</p>
+                                                        <p>Porciúncula perdeu 1 pontos de vida e ficou com 4.</p>
+                                                        <p>Natividade perdeu 3 pontos de vida e ficou com -2.</p>
+                                                        <p>Natividade foi derrotado e conquistado por Porciúncula.</p>
+                                
+                    </div>
+                    </div>
+                </div>
+                                                    <div class="card">
+                    <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            Resultado da rodada #1 (Mesquita x Nilópolis)
+                        </button>
+                    </h2>
+                    </div>
+
+                    <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                                <p>Nilópolis perdeu 3 pontos de vida e ficou com 17.</p>
+                                                        <p>Mesquita não sofreu dano.</p>
+                                                        <p>Nilópolis perdeu 3 pontos de vida e ficou com 14.</p>
+                                                        <p>Mesquita não sofreu dano.</p>
+                                                        <p>Nilópolis perdeu 4 pontos de vida e ficou com 10.</p>
+                                                        <p>Mesquita não sofreu dano.</p>
+                                                        <p>Nilópolis perdeu 3 pontos de vida e ficou com 7.</p>
+                                                        <p>Mesquita não sofreu dano.</p>
+                                                        <p>Nilópolis perdeu 3 pontos de vida e ficou com 4.</p>
+                                                        <p>Mesquita não sofreu dano.</p>
+                                                        <p>Nilópolis perdeu 4 pontos de vida e ficou com 0.</p>
+                                                        <p>Nilópolis foi derrotado e conquistado por Mesquita.</p>
+                                
+                    </div>
+                    </div>
+                </div>
+                                </div>
+    </section>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        (function ($) {
+            var territorios = [{"id":"1","territorio":"Angra dos Reis","populacao":"200407","area":"813210","idh":"0.724","sus":"58","salario":"3.6","pv":"10","iniciativa":"5","pontos":"9","vezes_selecionado":"1","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"3","poder_de_fogo":"3","nome_conquistador":null},{"id":"2","territorio":"Aperib\u00e9","populacao":"11612","area":"94542","idh":"0.692","sus":"8","salario":"1.7","pv":"12","iniciativa":"10","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"1","habilidade":"4","resistencia":"1","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"3","territorio":"Araruama","populacao":"130439","area":"638150","idh":"0.718","sus":"32","salario":"1.7","pv":"10","iniciativa":"7","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"4","territorio":"Areal","populacao":"12471","area":"110724","idh":"0.684","sus":"11","salario":"1.9","pv":"12","iniciativa":"9","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"1","habilidade":"4","resistencia":"1","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"5","territorio":"Arma\u00e7\u00e3o dos B\u00fazios","populacao":"33240","area":"70978","idh":"0.728","sus":"16","salario":"2","pv":"20","iniciativa":"6","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"1","habilidade":"4","resistencia":"2","armadura":"2","poder_de_fogo":"3","nome_conquistador":null},{"id":"6","territorio":"Arraial do Cabo","populacao":"30096","area":"152105","idh":"0.733","sus":"11","salario":"2","pv":"12","iniciativa":"8","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"1","habilidade":"4","resistencia":"1","armadura":"2","poder_de_fogo":"4","nome_conquistador":null},{"id":"7","territorio":"Barra do Pira\u00ed","populacao":"99969","area":"584610","idh":"0.733","sus":"41","salario":"1.8","pv":"10","iniciativa":"6","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"8","territorio":"Barra Mansa","populacao":"183976","area":"547133","idh":"0.729","sus":"69","salario":"2.2","pv":"10","iniciativa":"5","pontos":"9","vezes_selecionado":"1","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"3","nome_conquistador":null},{"id":"9","territorio":"Belford Roxo","populacao":"508614","area":"78985","idh":"0.684","sus":"58","salario":"2.2","pv":"20","iniciativa":"8","pontos":"13","vezes_selecionado":"1","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"4","armadura":"2","poder_de_fogo":"0","nome_conquistador":null},{"id":"10","territorio":"Bom Jardim","populacao":"27269","area":"382430","idh":"0.66","sus":"14","salario":"1.9","pv":"10","iniciativa":"6","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"3","nome_conquistador":null},{"id":"11","territorio":"Bom Jesus do Itabapoana","populacao":"36985","area":"596659","idh":"0.732","sus":"35","salario":"1.6","pv":"10","iniciativa":"9","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"12","territorio":"Cabo Frio","populacao":"222528","area":"413575","idh":"0.735","sus":"54","salario":"2","pv":"10","iniciativa":"8","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"3","nome_conquistador":null},{"id":"13","territorio":"Cachoeiras de Macacu","populacao":"58560","area":"954749","idh":"0.7","sus":"32","salario":"2","pv":"10","iniciativa":"8","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"4","nome_conquistador":null},{"id":"14","territorio":"Cambuci","populacao":"15496","area":"558281","idh":"0.691","sus":"8","salario":"1.8","pv":"10","iniciativa":"9","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"15","territorio":"Carapebus","populacao":"16039","area":"307388","idh":"0.713","sus":"9","salario":"2.2","pv":"10","iniciativa":"9","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"3","nome_conquistador":null},{"id":"16","territorio":"Comendador Levy Gasparian","populacao":"8544","area":"108639","idh":"0.685","sus":"10","salario":"1.6","pv":"10","iniciativa":"8","pontos":"6","vezes_selecionado":"0","conquistado_por":"0","forca":"1","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"6","nome_conquistador":null},{"id":"17","territorio":"Campos dos Goytacazes","populacao":"503424","area":"4031989","idh":"0.716","sus":"110","salario":"2.5","pv":"10","iniciativa":"6","pontos":"8","vezes_selecionado":"1","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"4","nome_conquistador":null},{"id":"18","territorio":"Cantagalo","populacao":"20177","area":"746928","idh":"0.709","sus":"28","salario":"2.5","pv":"10","iniciativa":"8","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"3","nome_conquistador":null},{"id":"19","territorio":"Cardoso Moreira","populacao":"12826","area":"522596","idh":"0.648","sus":"11","salario":"1.8","pv":"10","iniciativa":"6","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"20","territorio":"Carmo","populacao":"18755","area":"306513","idh":"0.696","sus":"17","salario":"1.7","pv":"10","iniciativa":"7","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"21","territorio":"Casimiro de Abreu","populacao":"43295","area":"462918","idh":"0.726","sus":"16","salario":"2.1","pv":"10","iniciativa":"6","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"4","nome_conquistador":null},{"id":"22","territorio":"Concei\u00e7\u00e3o de Macabu","populacao":"23064","area":"349211","idh":"0.712","sus":"13","salario":"1.6","pv":"10","iniciativa":"10","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"23","territorio":"Cordeiro","populacao":"21806","area":"113320","idh":"0.729","sus":"14","salario":"1.9","pv":"12","iniciativa":"10","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"1","habilidade":"4","resistencia":"1","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"24","territorio":"Duas Barras","populacao":"11454","area":"378964","idh":"0.659","sus":"10","salario":"1.7","pv":"10","iniciativa":"9","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"25","territorio":"Duque de Caxias","populacao":"914383","area":"467072","idh":"0.711","sus":"82","salario":"2.8","pv":"20","iniciativa":"6","pontos":"11","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"2","armadura":"2","poder_de_fogo":"1","nome_conquistador":null},{"id":"26","territorio":"Engenheiro Paulo de Frontin","populacao":"13929","area":"139816","idh":"0.722","sus":"12","salario":"1.8","pv":"10","iniciativa":"10","pontos":"6","vezes_selecionado":"0","conquistado_por":"0","forca":"1","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"6","nome_conquistador":null},{"id":"27","territorio":"Guapimirim","populacao":"59613","area":"358443","idh":"0.698","sus":"11","salario":"1.9","pv":"12","iniciativa":"9","pontos":"10","vezes_selecionado":"0","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"1","armadura":"1","poder_de_fogo":"2","nome_conquistador":null},{"id":"28","territorio":"Iguaba Grande","populacao":"27762","area":"50543","idh":"0.761","sus":"14","salario":"1.8","pv":"20","iniciativa":"5","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"0","habilidade":"4","resistencia":"3","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"29","territorio":"Itabora\u00ed","populacao":"238695","area":"430438","idh":"0.693","sus":"62","salario":"2.1","pv":"10","iniciativa":"10","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"3","nome_conquistador":null},{"id":"30","territorio":"Itagua\u00ed","populacao":"125913","area":"273414","idh":"0.715","sus":"27","salario":"3.1","pv":"12","iniciativa":"9","pontos":"11","vezes_selecionado":"1","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"1","armadura":"3","poder_de_fogo":"1","nome_conquistador":null},{"id":"31","territorio":"Italva","populacao":"15113","area":"291718","idh":"0.688","sus":"13","salario":"1.8","pv":"10","iniciativa":"8","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"32","territorio":"Itaocara","populacao":"23247","area":"433397","idh":"0.713","sus":"14","salario":"1.8","pv":"10","iniciativa":"6","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"3","nome_conquistador":null},{"id":"33","territorio":"Itaperuna","populacao":"102626","area":"1106169","idh":"0.73","sus":"46","salario":"2.1","pv":"10","iniciativa":"7","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"3","nome_conquistador":null},{"id":"34","territorio":"Itatiaia","populacao":"31537","area":"241035","idh":"0.737","sus":"11","salario":"2.8","pv":"12","iniciativa":"9","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"1","armadura":"2","poder_de_fogo":"3","nome_conquistador":null},{"id":"35","territorio":"Japeri","populacao":"103960","area":"81697","idh":"0.659","sus":"15","salario":"2.1","pv":"20","iniciativa":"6","pontos":"12","vezes_selecionado":"0","conquistado_por":"0","forca":"1","habilidade":"4","resistencia":"5","armadura":"2","poder_de_fogo":"0","nome_conquistador":null},{"id":"36","territorio":"Laje do Muria\u00e9","populacao":"7386","area":"253556","idh":"0.668","sus":"8","salario":"1.8","pv":"10","iniciativa":"5","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"37","territorio":"Maca\u00e9","populacao":"251631","area":"1215485","idh":"0.764","sus":"83","salario":"6.4","pv":"10","iniciativa":"5","pontos":"12","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"5","poder_de_fogo":"0","nome_conquistador":null},{"id":"38","territorio":"Macuco","populacao":"5574","area":"77719","idh":"0.703","sus":"6","salario":"1.6","pv":"12","iniciativa":"6","pontos":"6","vezes_selecionado":"0","conquistado_por":"0","forca":"0","habilidade":"4","resistencia":"1","armadura":"1","poder_de_fogo":"6","nome_conquistador":null},{"id":"39","territorio":"Mag\u00e9","populacao":"243657","area":"390775","idh":"0.709","sus":"78","salario":"1.7","pv":"10","iniciativa":"9","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"40","territorio":"Mangaratiba","populacao":"43689","area":"358563","idh":"0.753","sus":"16","salario":"2.4","pv":"10","iniciativa":"10","pontos":"10","vezes_selecionado":"1","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"2","nome_conquistador":null},{"id":"41","territorio":"Maric\u00e1","populacao":"157789","area":"361572","idh":"0.765","sus":"26","salario":"2.3","pv":"12","iniciativa":"9","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"1","armadura":"2","poder_de_fogo":"3","nome_conquistador":null},{"id":"42","territorio":"Mendes","populacao":"18578","area":"95324","idh":"0.736","sus":"18","salario":"1.7","pv":"12","iniciativa":"10","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"1","habilidade":"4","resistencia":"1","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"43","territorio":"Mesquita","populacao":"175620","area":"41490","idh":"0.737","sus":"19","salario":"2.2","pv":"20","iniciativa":"6","pontos":"13","vezes_selecionado":"1","conquistado_por":"0","forca":"2","habilidade":"5","resistencia":"5","armadura":"2","poder_de_fogo":"1","nome_conquistador":null},{"id":"44","territorio":"Miguel Pereira","populacao":"25493","area":"287933","idh":"0.745","sus":"24","salario":"1.9","pv":"10","iniciativa":"8","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"45","territorio":"Miracema","populacao":"27195","area":"303244","idh":"0.713","sus":"13","salario":"1.8","pv":"10","iniciativa":"7","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"46","territorio":"Natividade","populacao":"15324","area":"387073","idh":"0.73","sus":"12","salario":"1.7","pv":"10","iniciativa":"9","pontos":"9","vezes_selecionado":"1","conquistado_por":"58","forca":"5","habilidade":"5","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":"Porci\u00fancula"},{"id":"47","territorio":"Nil\u00f3polis","populacao":"162269","area":"19393","idh":"0.753","sus":"21","salario":"1.8","pv":"20","iniciativa":"10","pontos":"11","vezes_selecionado":"1","conquistado_por":"43","forca":"1","habilidade":"5","resistencia":"6","armadura":"1","poder_de_fogo":"2","nome_conquistador":"Mesquita"},{"id":"48","territorio":"Niter\u00f3i","populacao":"511768","area":"133757","idh":"0.837","sus":"87","salario":"3.1","pv":"20","iniciativa":"7","pontos":"15","vezes_selecionado":"2","conquistado_por":"0","forca":"4","habilidade":"6","resistencia":"2","armadura":"2","poder_de_fogo":"1","nome_conquistador":null},{"id":"49","territorio":"Nova Friburgo","populacao":"190084","area":"935429","idh":"0.745","sus":"43","salario":"1.8","pv":"10","iniciativa":"6","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"50","territorio":"Nova Igua\u00e7u","populacao":"818875","area":"520807","idh":"0.713","sus":"104","salario":"2.1","pv":"12","iniciativa":"8","pontos":"10","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"1","armadura":"2","poder_de_fogo":"2","nome_conquistador":null},{"id":"51","territorio":"Paracambi","populacao":"51815","area":"190949","idh":"0.72","sus":"27","salario":"1.8","pv":"12","iniciativa":"8","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"1","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"52","territorio":"Para\u00edba do Sul","populacao":"44045","area":"571118","idh":"0.702","sus":"30","salario":"1.9","pv":"10","iniciativa":"6","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"53","territorio":"Paraty","populacao":"42630","area":"924296","idh":"0.693","sus":"34","salario":"2.2","pv":"10","iniciativa":"9","pontos":"10","vezes_selecionado":"0","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"2","nome_conquistador":null},{"id":"54","territorio":"Paty do Alferes","populacao":"27678","area":"314341","idh":"0.671","sus":"17","salario":"1.8","pv":"10","iniciativa":"6","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"55","territorio":"Petr\u00f3polis","populacao":"305687","area":"791144","idh":"0.745","sus":"79","salario":"2.3","pv":"10","iniciativa":"6","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"4","nome_conquistador":null},{"id":"56","territorio":"Pinheiral","populacao":"24941","area":"82254","idh":"0.715","sus":"14","salario":"1.5","pv":"20","iniciativa":"5","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"1","habilidade":"4","resistencia":"2","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"57","territorio":"Pira\u00ed","populacao":"28999","area":"490255","idh":"0.708","sus":"20","salario":"2.6","pv":"10","iniciativa":"9","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"4","nome_conquistador":null},{"id":"58","territorio":"Porci\u00fancula","populacao":"18730","area":"291847","idh":"0.697","sus":"15","salario":"2.2","pv":"10","iniciativa":"8","pontos":"9","vezes_selecionado":"1","conquistado_por":"0","forca":"4","habilidade":"5","resistencia":"0","armadura":"2","poder_de_fogo":"4","nome_conquistador":null},{"id":"59","territorio":"Porto Real","populacao":"19381","area":"50892","idh":"0.713","sus":"16","salario":"3.4","pv":"20","iniciativa":"5","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"0","habilidade":"4","resistencia":"2","armadura":"3","poder_de_fogo":"3","nome_conquistador":null},{"id":"60","territorio":"Quatis","populacao":"14165","area":"284826","idh":"0.69","sus":"14","salario":"1.7","pv":"10","iniciativa":"6","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"61","territorio":"Queimados","populacao":"149265","area":"75701","idh":"0.68","sus":"15","salario":"2.3","pv":"20","iniciativa":"6","pontos":"13","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"4","armadura":"2","poder_de_fogo":"0","nome_conquistador":null},{"id":"62","territorio":"Quissam\u00e3","populacao":"24246","area":"709397","idh":"0.704","sus":"19","salario":"2.7","pv":"10","iniciativa":"5","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"3","nome_conquistador":null},{"id":"63","territorio":"Resende","populacao":"130334","area":"1099336","idh":"0.768","sus":"47","salario":"3.1","pv":"10","iniciativa":"9","pontos":"10","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"3","poder_de_fogo":"2","nome_conquistador":null},{"id":"64","territorio":"Rio Bonito","populacao":"59814","area":"459458","idh":"0.71","sus":"35","salario":"1.9","pv":"10","iniciativa":"9","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"65","territorio":"Rio Claro","populacao":"18451","area":"846797","idh":"0.683","sus":"18","salario":"2.2","pv":"10","iniciativa":"8","pontos":"10","vezes_selecionado":"0","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"2","nome_conquistador":null},{"id":"66","territorio":"Rio das Flores","populacao":"9222","area":"478783","idh":"0.68","sus":"13","salario":"1.5","pv":"10","iniciativa":"9","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"3","nome_conquistador":null},{"id":"67","territorio":"Rio das Ostras","populacao":"145989","area":"228044","idh":"0.773","sus":"19","salario":"3.5","pv":"20","iniciativa":"7","pontos":"13","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"2","armadura":"3","poder_de_fogo":"0","nome_conquistador":null},{"id":"68","territorio":"Rio de Janeiro","populacao":"6688927","area":"1200255","idh":"0.799","sus":"257","salario":"4.1","pv":"12","iniciativa":"6","pontos":"14","vezes_selecionado":"2","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"1","armadura":"3","poder_de_fogo":"0","nome_conquistador":null},{"id":"69","territorio":"Santa Maria Madalena","populacao":"10417","area":"811454","idh":"0.668","sus":"15","salario":"2.1","pv":"10","iniciativa":"6","pontos":"10","vezes_selecionado":"0","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"2","nome_conquistador":null},{"id":"70","territorio":"Santo Ant\u00f4nio de P\u00e1dua","populacao":"42359","area":"603633","idh":"0.718","sus":"23","salario":"1.8","pv":"10","iniciativa":"5","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"71","territorio":"S\u00e3o Francisco de Itabapoana","populacao":"42201","area":"1118037","idh":"0.639","sus":"27","salario":"1.8","pv":"10","iniciativa":"9","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"72","territorio":"S\u00e3o Fid\u00e9lis","populacao":"38626","area":"1034893","idh":"0.691","sus":"22","salario":"1.7","pv":"10","iniciativa":"6","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"73","territorio":"S\u00e3o Gon\u00e7alo","populacao":"1077687","area":"248160","idh":"0.739","sus":"194","salario":"2.1","pv":"20","iniciativa":"7","pontos":"11","vezes_selecionado":"1","conquistado_por":"48","forca":"4","habilidade":"5","resistencia":"2","armadura":"2","poder_de_fogo":"2","nome_conquistador":"Niter\u00f3i"},{"id":"74","territorio":"S\u00e3o Jo\u00e3o da Barra","populacao":"36138","area":"452894","idh":"0.671","sus":"12","salario":"3.6","pv":"10","iniciativa":"8","pontos":"11","vezes_selecionado":"1","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"0","armadura":"3","poder_de_fogo":"1","nome_conquistador":null},{"id":"75","territorio":"S\u00e3o Jo\u00e3o de Meriti","populacao":"471888","area":"35216","idh":"0.719","sus":"48","salario":"1.9","pv":"20","iniciativa":"8","pontos":"12","vezes_selecionado":"1","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"5","armadura":"1","poder_de_fogo":"0","nome_conquistador":null},{"id":"76","territorio":"S\u00e3o Jos\u00e9 de Ub\u00e1","populacao":"7134","area":"249688","idh":"0.652","sus":"5","salario":"1.8","pv":"10","iniciativa":"8","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"77","territorio":"S\u00e3o Jos\u00e9 do Vale do Rio Preto","populacao":"21670","area":"220063","idh":"0.66","sus":"12","salario":"1.8","pv":"10","iniciativa":"9","pontos":"7","vezes_selecionado":"1","conquistado_por":"86","forca":"2","habilidade":"5","resistencia":"0","armadura":"1","poder_de_fogo":"6","nome_conquistador":"Teres\u00f3polis"},{"id":"78","territorio":"S\u00e3o Pedro da Aldeia","populacao":"102846","area":"332922","idh":"0.712","sus":"29","salario":"2.5","pv":"12","iniciativa":"5","pontos":"11","vezes_selecionado":"0","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"1","armadura":"2","poder_de_fogo":"1","nome_conquistador":null},{"id":"79","territorio":"S\u00e3o Sebasti\u00e3o do Alto","populacao":"9326","area":"398057","idh":"0.646","sus":"8","salario":"1.9","pv":"10","iniciativa":"9","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"3","nome_conquistador":null},{"id":"80","territorio":"Sapucaia","populacao":"18205","area":"540673","idh":"0.675","sus":"15","salario":"1.8","pv":"10","iniciativa":"6","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"81","territorio":"Saquarema","populacao":"87704","area":"352130","idh":"0.709","sus":"22","salario":"2","pv":"12","iniciativa":"6","pontos":"11","vezes_selecionado":"0","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"1","armadura":"2","poder_de_fogo":"1","nome_conquistador":null},{"id":"82","territorio":"Serop\u00e9dica","populacao":"86743","area":"283634","idh":"0.713","sus":"23","salario":"4","pv":"12","iniciativa":"9","pontos":"12","vezes_selecionado":"1","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"1","armadura":"4","poder_de_fogo":"0","nome_conquistador":null},{"id":"83","territorio":"Silva Jardim","populacao":"21773","area":"937755","idh":"0.654","sus":"19","salario":"2","pv":"10","iniciativa":"10","pontos":"10","vezes_selecionado":"0","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"2","nome_conquistador":null},{"id":"84","territorio":"Sumidouro","populacao":"15577","area":"413370","idh":"0.611","sus":"15","salario":"2.2","pv":"10","iniciativa":"8","pontos":"10","vezes_selecionado":"1","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"2","nome_conquistador":null},{"id":"85","territorio":"Tangu\u00e1","populacao":"33870","area":"142529","idh":"0.654","sus":"10","salario":"1.9","pv":"20","iniciativa":"5","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"1","habilidade":"4","resistencia":"2","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"86","territorio":"Teres\u00f3polis","populacao":"180886","area":"773338","idh":"0.73","sus":"48","salario":"2.2","pv":"10","iniciativa":"7","pontos":"10","vezes_selecionado":"1","conquistado_por":"0","forca":"4","habilidade":"5","resistencia":"0","armadura":"2","poder_de_fogo":"3","nome_conquistador":null},{"id":"87","territorio":"Trajano de Moraes","populacao":"10611","area":"588534","idh":"0.667","sus":"11","salario":"1.7","pv":"10","iniciativa":"6","pontos":"7","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"5","nome_conquistador":null},{"id":"88","territorio":"Tr\u00eas Rios","populacao":"81453","area":"322843","idh":"0.725","sus":"33","salario":"1.9","pv":"10","iniciativa":"7","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"3","nome_conquistador":null},{"id":"89","territorio":"Valen\u00e7a","populacao":"76163","area":"1300767","idh":"0.738","sus":"48","salario":"1.9","pv":"10","iniciativa":"7","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"3","habilidade":"4","resistencia":"0","armadura":"1","poder_de_fogo":"4","nome_conquistador":null},{"id":"90","territorio":"Varre-Sai","populacao":"10890","area":"201938","idh":"0.659","sus":"5","salario":"2.1","pv":"12","iniciativa":"10","pontos":"9","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"1","armadura":"2","poder_de_fogo":"3","nome_conquistador":null},{"id":"91","territorio":"Vassouras","populacao":"36702","area":"535638","idh":"0.714","sus":"25","salario":"2.1","pv":"10","iniciativa":"7","pontos":"8","vezes_selecionado":"0","conquistado_por":"0","forca":"2","habilidade":"4","resistencia":"0","armadura":"2","poder_de_fogo":"4","nome_conquistador":null},{"id":"92","territorio":"Volta Redonda","populacao":"271998","area":"182105","idh":"0.771","sus":"94","salario":"2.3","pv":"12","iniciativa":"8","pontos":"11","vezes_selecionado":"1","conquistado_por":"0","forca":"4","habilidade":"4","resistencia":"1","armadura":"2","poder_de_fogo":"1","nome_conquistador":null}];
+            console.log(territorios);
+            var selectMunicipio = $('#smunicipio').change(function () {
+                var index = $(this).val();
+                setMunicipioData(territorios[index]);
+            });
+            $.each(territorios, function (i, territorio) {
+                $('<option>').val(i).html(territorio.territorio).appendTo(selectMunicipio);
+            });
+            setMunicipioData(territorios[0]);
+
+            function setMunicipioData(municipio) {
+                $('#forca').html(municipio.forca);
+                $('#habilidade').html(municipio.habilidade);
+                $('#resistencia').html(municipio.resistencia);
+                $('#armadura').html(municipio.armadura);
+                $('#pdf').html(municipio.poder_de_fogo);
+                $('#pv').html(municipio.pv);
+                $('#imperio').html(municipio.nome_conquistador ? municipio.nome_conquistador : 'Próprio').prop('disabled', municipio.nome_conquistador);
+                var lista = $('.modal-body ul').empty();
+                $.each(territorios, function (i, territorio) {
+                    if (territorio.conquistado_por == municipio.id) {
+                        $('<li>').html(territorio.territorio).appendTo(lista);
+                    }
+                });
+            }
+
+        })(jQuery);
+    </script>
+</body>
+</html>
